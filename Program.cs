@@ -18,17 +18,8 @@ class Program
                 break;
                 case "G":
                 {
-                    if(count<3)
-                    {
-                        linklist.Add(Convert.ToChar(flower));
-                        count++;                        
-                    }
-                    else
-                    {        
-                        Console.WriteLine("Invalid pattern");
-                        linklist.Remove(1);
-                        count--;
-                    }
+
+                    linklist.Add(Convert.ToChar(flower));
                 }
                 break;
                 case "O":
@@ -48,9 +39,19 @@ class Program
                 break;
             }
         }
+        Console.Write(linklist.GetLength());
+        while(count < linklist.GetLength())
+        {
+            Console.Write(linklist.Get(count));
+            count++;
+        }
     }
     public void Invalid()
     {
         Console.WriteLine("Invalid pattern");
+    }
+    public void CheckG()
+    {
+        
     }
 }
