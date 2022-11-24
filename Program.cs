@@ -48,7 +48,6 @@ class Program
                 break;
             }
         }
-        linklist.printList();
     }
     public void Invalid()
     {
