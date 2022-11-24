@@ -133,16 +133,4 @@ class CircularLinkedList<T> where T : struct
             this.Add(other.Get(i));
         }
     }
-
-
-    public void CheckG()
-    {
-        
-    }
-
-    public void CheckR()
-    {
-
-    }
-
 }
