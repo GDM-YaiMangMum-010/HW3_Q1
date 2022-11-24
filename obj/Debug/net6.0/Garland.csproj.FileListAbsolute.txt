@@ -1,0 +1,15 @@
+F:\MDT\2022\MDT211\HW3\Garland\bin\Debug\net6.0\Garland.exe
+F:\MDT\2022\MDT211\HW3\Garland\bin\Debug\net6.0\Garland.deps.json
+F:\MDT\2022\MDT211\HW3\Garland\bin\Debug\net6.0\Garland.runtimeconfig.json
+F:\MDT\2022\MDT211\HW3\Garland\bin\Debug\net6.0\Garland.dll
+F:\MDT\2022\MDT211\HW3\Garland\bin\Debug\net6.0\Garland.pdb
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\Garland.csproj.AssemblyReference.cache
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\Garland.GeneratedMSBuildEditorConfig.editorconfig
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\Garland.AssemblyInfoInputs.cache
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\Garland.AssemblyInfo.cs
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\Garland.csproj.CoreCompileInputs.cache
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\Garland.dll
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\refint\Garland.dll
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\Garland.pdb
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\Garland.genruntimeconfig.cache
+F:\MDT\2022\MDT211\HW3\Garland\obj\Debug\net6.0\ref\Garland.dll

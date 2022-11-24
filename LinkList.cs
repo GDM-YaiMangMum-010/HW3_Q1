@@ -133,4 +133,23 @@ class CircularLinkedList<T> where T : struct
             this.Add(other.Get(i));
         }
     }
+
+    public void CheckFirstAdd(char Yen)
+    {
+        if(this.length == 0&&Yen!='J')
+        {
+
+        }
+    }
+
+    public void CheckG()
+    {
+        
+    }
+
+    public void CheckR()
+    {
+
+    }
+
 }
