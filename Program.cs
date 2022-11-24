@@ -17,9 +17,9 @@ class Program
                     A = char.Parse(flower);
                     if(linklist.GetLength() > 1)
                     {
-                        B = linklist.Get(linklist.GetLength());
-                        C = linklist.Get(linklist.GetLength()-1);
-                        if(B == 'R' && A == C)
+                        B = linklist.Get(linklist.GetLength()-1);
+                        C = linklist.Get(linklist.GetLength()-2);
+                        if(B == R && A == C)
                         {
                             Console.WriteLine("Invalid pattern");
                         }
@@ -28,7 +28,7 @@ class Program
                             linklist.Add(Convert.ToChar(flower));
                         }
                     }
-                    linklist.Add(Convert.ToChar(flower));
+                    else linklist.Add(Convert.ToChar(flower));
                 }
                 break;
                 case "G":
@@ -42,7 +42,7 @@ class Program
                         E = linklist.Get(0);
                         F = linklist.Get(1);
                         G = linklist.Get(2);
-                        if((A == B && B == C && C == D) || (E == A && A == B && B == C) || (F == E && E == A && A == B) || (G == F && F == E && E == A))
+                        if((A == B && B == C && C == D) || (E == A && A == B && B == C) || (F == E && E == A && A == B) || (G == F && F == E && E == A) || (B == R && A == C))
                         {
                             Console.WriteLine("Invalid pattern");
                         }
@@ -50,6 +50,21 @@ class Program
                         {
                             linklist.Add(Convert.ToChar(flower));
                         }
+                    }
+                    else if(linklist.GetLength() > 1)
+                    {
+                        B = linklist.Get(linklist.GetLength()-1);
+                        C = linklist.Get(linklist.GetLength()-2);
+                        D = linklist.Get(linklist.GetLength()-3);
+                        if(B == R && A == C)
+                        {
+                            Console.WriteLine("Invalid pattern");
+                        }
+                        else
+                        {
+                            linklist.Add(Convert.ToChar(flower));
+                        }
+                        
                     }
                     else
                     {
@@ -62,8 +77,8 @@ class Program
                     A = char.Parse(flower);
                     if(linklist.GetLength() > 1)
                     {
-                        B = linklist.Get(linklist.GetLength());
-                        C = linklist.Get(linklist.GetLength()-1);
+                        B = linklist.Get(linklist.GetLength()-1);
+                        C = linklist.Get(linklist.GetLength()-2);
                         if(B == R && A == C)
                         {
                             Console.WriteLine("Invalid pattern");
@@ -73,22 +88,21 @@ class Program
                             linklist.Add(Convert.ToChar(flower));
                         }
                     }
-                    linklist.Add(Convert.ToChar(flower));
+                    else linklist.Add(Convert.ToChar(flower));
                 }
                 break;
                 case "R":
                 {
                     A = char.Parse(flower);
-                    
                     if(linklist.GetLength() == 0)
                     {
                         Console.WriteLine("Invalid pattern");
                     }
-                    else if(linklist.GetLength() > 0)
+                    else
                     {
-                        B = linklist.Get(linklist.GetLength());
-                        C = linklist.Get(linklist.GetLength()-1);
-                        if(B == 'R' && A == C)
+                        B = linklist.Get(linklist.GetLength()-1);
+                        C = linklist.Get(linklist.GetLength()-2);
+                        if(B == R && A == C)
                         {
                             Console.WriteLine("Invalid pattern");
                         }
@@ -97,7 +111,6 @@ class Program
                             linklist.Add(Convert.ToChar(flower));
                         }
                     }
-                    
                 }
                 break;
                 default:
@@ -107,7 +120,6 @@ class Program
                 break;
             }
         }
-        Console.WriteLine(linklist.GetLength());
         while(count < linklist.GetLength())
         {
             Console.Write(linklist.Get(count));
